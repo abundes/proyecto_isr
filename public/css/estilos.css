@@ -1,0 +1,714 @@
+@font-face {
+    font-family: 'Poppins';
+    /* Nombre de la fuente */
+    src: url('../Poppins/Poppins-Medium.ttf');
+    /* URL de Google Fonts */
+    /* Otras propiedades opcionales, como font-weight y font-style */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    width: 95%;
+    min-height: 100vh;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn_primario {
+    background: #0C7FC0;
+    color: #fff;
+}
+
+.cuerpo {
+    background-image: url(../img/fondo_login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/*******************************************/
+
+
+/***************************Estilos de login *****************************************************************************************/
+
+.wrapper {
+    width: 420px;
+    color: #fff;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: rgba(0, 0, 0, .4);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar {
+    width: 100px;
+    border-radius: 50%;
+}
+
+.wrapper h1 {
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+}
+
+.wrapper .input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0px;
+}
+
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 30px;
+    font-size: 1em;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #fff;
+}
+
+.input-box i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+}
+
+.wrapper .remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9em;
+    margin: -15px 0 15px;
+}
+
+.remember-forgot label input {
+    accent-color: #fff;
+    margin-right: 3px;
+}
+
+.remember-forgot a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.wrapper .btn {
+    width: 85%;
+    height: 40px;
+    background: #fff;
+    cursor: pointer;
+    font-size: 1em;
+    color: #333;
+    font-weight: 600;
+}
+
+/*******************************************/
+
+
+/******************** ESTILOS DE HOME ************************************************************************************************/
+
+.cont_home {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Establece la dirección de flexión a "column" */
+    align-items: center;
+    /* Centra horizontalmente los elementos en el contenedor */
+    justify-content: center;
+    /* Centra verticalmente los elementos en el contenedor */
+}
+
+.cont_title {
+    width: 100%;
+}
+
+.cont_title .title {
+    font-size: 6em;
+    text-align: center;
+    color: #007521;
+}
+
+.cont_icons {
+    display: flex;
+    align-items: center;
+}
+
+.cont_icons i {
+    font-size: 3.5em;
+    margin: 15px;
+}
+
+.cont_icons i:nth-child(1),
+.cont_icons i:nth-child(3),
+.cont_icons i:nth-child(5) {
+    margin-top: 0px;
+}
+
+.cont_icons i:nth-child(2),
+.cont_icons i:nth-child(4) {
+    /* Puedes ajustar el margen inferior de este ícono según tus necesidades */
+    margin-bottom: 100px;
+}
+
+.cont_icons i:nth-child(1) {
+    color: rgb(4, 133, 0)
+}
+
+.cont_icons i:nth-child(2) {
+    color: rgb(223, 226, 27)
+}
+
+.cont_icons i:nth-child(3) {
+    color: rgb(9, 145, 199)
+}
+
+.cont_icons i:nth-child(4) {
+    color: rgb(161, 12, 12)
+}
+
+.cont_icons i:nth-child(5) {
+    color: rgb(8, 66, 13)
+}
+
+.cont_menu {
+    width: 95%;
+    margin: 0px auto;
+    height: 80px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: #007521;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.cont_menu .enlaces a {
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-right: 10px;
+    padding: 10px;
+    transition: all .7s;
+}
+
+.cont_menu .enlaces a:hover {
+    color: #333;
+}
+
+.cont_menu .enlaces .activo {
+    background-color: #fff;
+    color: #005f03;
+    border-radius: 5px;
+}
+
+.cont_menu .logo i,
+.cont_menu .logo h2 {
+    color: #fff;
+    display: inline-block;
+
+}
+
+.cont_menu .logo i {
+    font-size: 2.2em;
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.cont_menu .logo h2 {
+    font-size: 1.5em;
+    margin: 0px;
+}
+
+.cont_btns a button {
+    background-color: #00000000;
+    border: none;
+}
+
+.cont_btns a button i {
+    font-size: 2.2em;
+    color: #fff;
+    margin-right: 20px;
+}
+
+/*******************************************/
+
+
+/* ESTILOS DE TARGETAS  ******************************************************************************************/
+
+.container__slider {
+    max-width: 500px;
+    height: 350px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 10px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 600px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transition: tranform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.card a {
+    display: block;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2em;
+    color: #333;
+}
+
+img {
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+#item-2:checked~.cards #selector-1,
+#item-1:checked~.cards #selector-3,
+#item-3:checked~.cards #selector-2 {
+    transform: translateX(-60%) scale(0.8);
+    opacity: 0.8;
+    z-index: 0;
+}
+
+#item-3:checked~.cards #selector-1,
+#item-1:checked~.cards #selector-2,
+#item-2:checked~.cards #selector-3 {
+    transform: translateX(60%) scale(0.8);
+    opacity: 0.8;
+    z-index: 0;
+}
+
+#item-1:checked~.cards #selector-1,
+#item-2:checked~.cards #selector-2,
+#item-3:checked~.cards #selector-3 {
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+
+
+/* FIN DE ESTILOS DE TARDEJTAS  */
+
+
+/* ESTILOS DE TARJETAS DE CONTRIBUYENTES **************************************************************************************************/
+.title-h2 {
+    text-align: center;
+}
+
+.cont_cards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_c {
+    width: 40%;
+    margin: 0px 40px;
+    border: 1px solid #333;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+}
+
+.card_c .icon {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_c .icon i {
+    font-size: 3.5em;
+    color: #4CAF50;
+}
+
+.card_c .info {
+    width: 75%;
+    margin-left: 10px;
+}
+
+.cont_btns_card_c {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.btn_card_c {
+    width: 50px;
+    margin-right: 10px;
+}
+
+/*******************************************/
+
+/* ESTILOS PARA COMBOS DE FORMULARIOS *************************************************************************************************/
+.cont_title {
+    color: #222;
+    width: 90%;
+    /* height: 50px; */
+    margin: 0px auto;
+    margin-bottom: 20px;
+
+}
+
+.cont_title h2 {
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.combo_from {
+    width: 90%;
+    margin: 0px auto;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.combo_head {
+    background: #444;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding: 10px;
+}
+
+.combo_head i  {
+    display: inline-block;
+    color: #fff;
+    font-size: 3em;
+    margin-left: 10px;
+}
+
+.combo_head h2 {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.combo_body {
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: #333;
+    padding: 30px 0px;
+}
+
+.combo_body form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.colum-center {
+    grid-column: 1 / span 2;
+    text-align: end;
+}
+
+.colum-left,
+.colum-right {
+    text-align: end;
+}
+
+.combo_body .colum-center input {
+    width: 80%;
+}
+
+.combo_body label {
+    display: inline-block;
+    text-align: start;        
+    width: 38%;
+    font-size: 1.1em;
+}
+
+.combo_body .colum-center label {
+    display: inline-block;
+    width: 15%;
+    text-align: end;
+}
+.combo_body select,
+.combo_body input {
+    border: none;
+    background: #f4f4f4;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 40px;
+    width: 50%;
+    height: 6vh;
+}
+
+.combo_body .box_input {
+    margin-bottom: 15px;
+}
+
+.combo_body table {
+    width: 80%;
+    margin: 0px auto;
+    border-collapse: collapse;
+}
+
+.combo_body table th {
+    background-color: #444;
+}
+.combo_body .tabla-mes-isr th:nth-child(1) {
+    background: #F3A001;
+}
+
+.combo_body .tabla-mes-isr th:nth-child(3) {
+    background: #15D84B;
+}
+
+.combo_body .tabla-mes-isr th:nth-child(4) {
+    background: #0C7FC0;
+}
+
+.combo_body table th,
+.combo_body table td {
+    width: 140px;
+    border: 1px solid #8b8b8b;
+    padding: 4px;
+    text-align:start;
+}
+
+.combo_body .colum-left .tabla-resumen tr:nth-child(1)  {
+    background-color: #F3A001;
+}
+
+.combo_body .colum-left .tabla-resumen td:nth-child(1){
+    width: 20px;
+    text-align: center;
+}
+
+.combo_body .colum-left .tabla-resumen tr:nth-child(3)  {
+    background-color: #0C7FC0;
+}
+
+.combo_body .colum-left .tabla-resumen tr:nth-child(5)  {
+    background-color: #03A500;
+}
+
+.combo_body .tabla-iva td:nth-child(4){
+    width: 180px;
+}
+
+.combo_body .tabla-iva td:nth-child(4) > button {
+    margin-right: 5px;
+}
+
+.btn {
+    width: 120px;
+    height: 35px;
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #fff;
+    transition: all .8s;
+}
+
+.btn-primary {
+    background: #0C7FC0;
+}
+
+.btn-second {
+    transition: all .8s;
+    color: #fff;
+    background: #F3A100;
+}
+
+.btn-third { 
+    transition: all .8s;
+    color: #fff;
+    background: #860700;
+}
+
+.btn-fourth {
+    background: #03A500;
+}
+
+.btn-second:hover {
+    border: 2px solid #F3A100;
+    color: #F3A100;
+    background: #fff;
+}
+
+.btn-primary:hover {
+    border: 2px solid #0C7FC0;
+    color: #0C7FC0;
+    background: #fff;
+}
+
+.btn-third:hover {
+    border: 2px solid #860700;
+    color: #860700;
+    background: #fff;
+}
+
+.btn-fourth:hover {
+    border: 2px solid #03A500;
+    color: #03A500;
+    background: #fff;
+}
+
+/*********************************************/
+
+
+/* ESTILOS PARA EL PIEDE DE PAGINA *********************************************/
+
+footer{
+    width: 100%;
+    padding: 50px 0px;
+    background-image: url(../img/background-footer.svg);
+    background-size: cover;
+    margin-top: 60px;
+
+    /*background-color: #d0f0f8;
+    -webkit-mask-image: url("../Images/background-footer.svg");
+    mask-image: url("../Images/background-footer.svg");
+    -webkit-mask-size: cover;
+    mask-size: cover;*/
+}
+
+.container__footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.box__footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.box__footer .logo {
+    width: 100%;
+    text-align:center;
+}
+.box__footer .logo img{
+    
+    width: 100px;
+}
+
+.box__footer .terms{
+    max-width: 350px;
+    margin-top: 20px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 18px;
+}
+
+.box__footer h2{
+    margin-bottom: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.box__footer a{
+    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.box__footer a:hover{
+    opacity: 0.8;
+}
+
+.box__footer a .fab{
+    font-size: 20px;
+}
+
+.box__copyright{
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 40px;
+}
+
+.box__copyright p{
+    margin-top: 20px;
+    color: #b3b3b3;
+}
+
+.box__copyright hr{
+    border: none;
+    height: 1px;
+    background-color: #bfbfbf;
+}
+
+/*********************************************/
+
+.rounded {
+    border-radius: 10px; /* Ajusta el valor según tus preferencias */
+}
